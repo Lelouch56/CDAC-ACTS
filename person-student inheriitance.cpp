@@ -9,16 +9,23 @@ int age;
 double mob_num;
 
 public:
+    // virtual void Display()=0;
     Person(string a, int b, double c):name(a),age(b),mob_num(c){}
     void getter(){
         cout<<name<<endl<<age<<endl<<mob_num<<endl;
     }
     
 };
+
+// void Person::Display(); invalid cannot be declared outside
+
 class Student : public Person{
 int roll;
 string school;
 public:
+    // void Display(){
+    //     cout<<roll<<endl<<school<<endl;
+    // };
     Student(string a, int b, double c, int d, string e):Person(a,b,c),roll(d),school(e){  }
     void get(){
         getter();
@@ -38,6 +45,7 @@ class Artist : public Person{
 
 int main(){
     Student s("Aman",20,8986768,101,"UPS");
-    s.get();
+    // s.get();
+    s.Display();
     return 0;
 }
