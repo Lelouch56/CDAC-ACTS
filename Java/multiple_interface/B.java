@@ -1,5 +1,6 @@
 package day7;
 
-public interface A {
+public interface B {
 	double calculate(double d1,double d2);
+
 }
