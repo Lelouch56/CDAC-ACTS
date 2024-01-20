@@ -48,6 +48,7 @@ public class UI {
 					}
 					break;
 				case 4:
+						//need to use iterator
 					List <String>groceryKeys=new ArrayList<String>(groceryList.keySet());
 					for(String gToDisplay:groceryKeys) {
 						if(groceryList.get(gToDisplay).getStock()==0) {
